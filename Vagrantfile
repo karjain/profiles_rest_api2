@@ -26,9 +26,9 @@ config.vm.synced_folder "C:/Users/karbh/py_ws/profiles_rest_api2", "/opt/vagrant
    sudo apt-get update
    sudo apt-get install -y python3-venv zip
    touch /home/vagrant/.bash_aliases
-   if ! grep -q PYTHON_ALIAS_ADDED /home/vagrant/.bash_aliases; then
-     echo "# PYTHON_ALIAS_ADDED" >> /home/vagrant/.bash_aliases
-     echo "alias python='python3'" >> /home/vagrant/.bash_aliases
+   if ! grep -q PYTHON_ALIAS_ADDED /opt/vagrant/.bash_aliases; then
+     echo "# PYTHON_ALIAS_ADDED" >> /opt/vagrant/.bash_aliases
+     echo "alias python='python3'" >> /opt/vagrant/.bash_aliases
    fi
  SHELL
 end
